@@ -1,5 +1,106 @@
+body{
+  background-image: url(./img/cover_bg_3.jpg);
+  position: relative;
+}
+
+#app {
+  height: 100%;
+  min-height: 100vh;
+}
+.content{top: 20%; position: relative;}
+.content a.img-wrap{
+  width: 150px;
+  height: 150px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.rotate-scale-down:hover {
+	-webkit-animation: rotate-scale-down 0.65s linear both;
+	        animation: rotate-scale-down 0.65s linear both;
+}
+@-webkit-keyframes rotate-scale-down {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+            transform: scale(1) rotateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(0.5) rotateZ(180deg);
+            transform: scale(0.5) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+            transform: scale(1) rotateZ(360deg);
+  }
+}
+@keyframes rotate-scale-down {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+            transform: scale(1) rotateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(0.5) rotateZ(180deg);
+            transform: scale(0.5) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+            transform: scale(1) rotateZ(360deg);
+  }
+}
+
+p{
+  color: #fff;
+  font-size: 22px;
+}
+ h1 {
+  font-family: "Kaushan Script", cursive;
+  color: #fff;
+  font-size: 50px;
+  line-height: 1.3;
+  font-weight: 300;
+  transform: rotate( 
+-5deg );
+  position: relative;
+  width: max-content;
+  margin: 30px auto;
+}
+h1:before {
+  position: absolute;
+  top: 40px;
+  left: -10px;
+  width: 30px;
+  height: 4px;
+  content: '';
+  background: #fff;
+  margin-left: -30px;
+}
+h1:after {
+  position: absolute;
+  top: 40px;
+  right: -20px;
+  width: 30px;
+  height: 4px;
+  content: '';
+  background: #fff;
+  margin-right: -30px;
+}
+.social-link a{
+  color: #fff;
+  margin: 20px 10px;
+  display: inline-block;
+  transition: 0.3s ease-in-out;
+}
+.social-link a:hover{
+color: #3c8294 !important;
+}
 .App {
   text-align: center;
+  height: 100vh;
+  background: hsl(199deg 30% 19% / 95%);
 }
 
 .App-logo {
